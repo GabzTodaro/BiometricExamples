@@ -12,6 +12,9 @@
 		C0C1B7E6216684F0005523EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C1B7E4216684F0005523EA /* Main.storyboard */; };
 		C0C1B7E8216684F2005523EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C1B7E7216684F2005523EA /* Assets.xcassets */; };
 		C0C1B7EB216684F2005523EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C1B7E9216684F2005523EA /* LaunchScreen.storyboard */; };
+		C0C1B7F421668767005523EA /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C1B7F321668767005523EA /* LocalAuthentication.framework */; };
+		C0C1B7F6216688C4005523EA /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1B7F5216688C4005523EA /* KeychainPasswordItem.swift */; };
+		C0C1B7FB21668EC4005523EA /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1B7FA21668EC4005523EA /* KeychainConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C0C1B7E7216684F2005523EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0C1B7EA216684F2005523EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0C1B7EC216684F2005523EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C1B7F321668767005523EA /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		C0C1B7F5216688C4005523EA /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		C0C1B7FA21668EC4005523EA /* KeychainConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C1B7F421668767005523EA /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				C0C1B7DF216684F0005523EA /* FingerPrintExample */,
 				C0C1B7DE216684F0005523EA /* Products */,
+				C0C1B7F221668767005523EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,32 @@
 		C0C1B7DF216684F0005523EA /* FingerPrintExample */ = {
 			isa = PBXGroup;
 			children = (
+				C0C1B7F7216689FD005523EA /* GenericKeychain */,
 				C0C1B7E0216684F0005523EA /* AppDelegate.swift */,
 				C0C1B7E2216684F0005523EA /* ViewController.swift */,
-				C0C1B7E4216684F0005523EA /* Main.storyboard */,
 				C0C1B7E7216684F2005523EA /* Assets.xcassets */,
 				C0C1B7E9216684F2005523EA /* LaunchScreen.storyboard */,
+				C0C1B7E4216684F0005523EA /* Main.storyboard */,
 				C0C1B7EC216684F2005523EA /* Info.plist */,
 			);
 			path = FingerPrintExample;
+			sourceTree = "<group>";
+		};
+		C0C1B7F221668767005523EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0C1B7F321668767005523EA /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0C1B7F7216689FD005523EA /* GenericKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				C0C1B7F5216688C4005523EA /* KeychainPasswordItem.swift */,
+				C0C1B7FA21668EC4005523EA /* KeychainConfiguration.swift */,
+			);
+			path = GenericKeychain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +163,8 @@
 			files = (
 				C0C1B7E3216684F0005523EA /* ViewController.swift in Sources */,
 				C0C1B7E1216684F0005523EA /* AppDelegate.swift in Sources */,
+				C0C1B7FB21668EC4005523EA /* KeychainConfiguration.swift in Sources */,
+				C0C1B7F6216688C4005523EA /* KeychainPasswordItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
